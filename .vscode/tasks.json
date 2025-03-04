@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gfortran",
+            "args": [
+                "-std=f2008",
+                "-Wall",
+                "-o",
+                "${workspaceFolder}/bin/程序名称",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
